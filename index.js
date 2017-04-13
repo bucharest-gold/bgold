@@ -3,8 +3,8 @@
 var fs = require('fs');
 var execSync = require('child_process').execSync;
 
-var gitUser = execSync('git config user.name').toString().replace('\n','');
-var user = gitConfigUser() || gitUser || 'USER';
+// var gitUser = execSync('git config user.name').toString().replace('\n','');
+// var user = gitConfigUser() || gitUser || 'USER';
 
 // createLicense()
 
@@ -99,29 +99,6 @@ function exists (name) {
   } catch (e) {
     return false;
   }
-}
-
-function gitConfigUser () {
-  var user = '';
-  if (exists('.git/config')) {
-    var content = fs.readFileSync('.git/config').toString().split('\n');
-    var remoteFound = false;
-    for (var i = 0; i < content.length; i++) {
-      if (content[i] === '[remote "origin"]') {
-        remoteFound = true;
-        break;
-      }
-    }
-    if (remoteFound) {
-      for (var i = 0; i < content.length; i++) {
-        if (content[i] === '[remote "origin"]') {
-          user = content[++i].split(':')[1].split('/')[0];
-          break;
-        }
-      }
-    }
-  }
-  return user;
 }
 
 var needInstall = true;
