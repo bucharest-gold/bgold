@@ -1,0 +1,5 @@
+foo
+
+─ UNMET PEER DEPENDENCY eslint-config-standard@10.2.0
+├── UNMET PEER DEPENDENCY eslint-plugin-import@>=2.2.0
+├── UNMET PEER DEPENDENCY eslint-plugin-node@>=4.2.2
