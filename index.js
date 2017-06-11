@@ -1,10 +1,8 @@
 'use strict';
 
-var fs = require('fs');
-var execSync = require('child_process').execSync;
+const fs = require('fs');
 
-// var gitUser = execSync('git config user.name').toString().replace('\n','');
-// var user = gitConfigUser() || gitUser || 'USER';
+// get the user()
 
 // createLicense()
 
@@ -24,8 +22,6 @@ var baseData = {
     test: 'tape test/*.js | tap-spec',
     lint: 'eslint test/*.js index.js',
     prepublish: 'nsp check',
-    coverage: 'istanbul cover tape test/*.js',
-    dependencyCheck: 'szero . --ci',
     release: 'standard-version'
   },
   repository: {
@@ -47,11 +43,9 @@ var baseData = {
     'eslint-plugin-promise': '~3.3.0',
     'eslint-plugin-react': '~6.4.1',
     'eslint-plugin-standard': '~2.0.1',
-    istanbul: '~0.4.5',
     nsp: '~2.6.2',
     'tap-spec': '~4.1.1',
     tape: '~4.6.2',
-    'szero': '^0.7.1',
     'standard-version': '^3.0.0'
   }
 };

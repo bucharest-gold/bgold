@@ -1,49 +1,34 @@
 {
-  "name": "bgold",
-  "version": "0.1.0",
-  "description": "A CLI tool to setup a new Node.js project based on bucharest-gold guidelines.",
+  "name": "foo",
+  "version": "0.0.1",
   "main": "index.js",
+  "author": "Red Hat, Inc.",
+  "license": "Apache-2.0",
   "scripts": {
-    "test": "nyc tape test/*.js | tap-spec",
-    "lint": "eslint test/*.js index.js lib/*.js",
-    "coverage": "nyc report --reporter=text-lcov > ./coverage/lcov.info",
+    "test": "tape test/*.js | tap-spec",
+    "lint": "eslint test/*.js index.js",
     "prepublish": "nsp check",
     "release": "standard-version"
   },
-  "files": [
-    "bin",
-    "LICENSE",
-    "package.json",
-    "README.md",
-    "lib"
-  ],
-  "author": "Helio Frota",
   "repository": {
     "type": "git",
-    "url": "bucharest-gold/bgold"
+    "url": "git://github.com/foo/foo.git"
   },
-  "dependencies": {
-    "commander": "^2.9.0"
+  "bugs": {
+    "url": "https://github.com/foo/foo/issues"
   },
-  "license": "Apache-2.0",
+  "homepage": "https://github.com/foo/foo",
   "devDependencies": {
-    "eslint": "^3.7.1",
-    "eslint-config-semistandard": "^8.0.0",
-    "eslint-config-standard": "^7.0.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-promise": "^3.3.0",
-    "eslint-plugin-react": "^6.2.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "ink-docstrap": "^1.3.0",
-    "nsp": "^2.6.1",
-    "nyc": "^10.1.2",
-    "standard-version": "^4.0.0",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.0"
+    "eslint": "~3.8.1",
+    "eslint-config-semistandard": "~7.0.0",
+    "eslint-config-standard": "~6.2.0",
+    "eslint-plugin-promise": "~3.3.0",
+    "eslint-plugin-react": "~6.4.1",
+    "eslint-plugin-standard": "~2.0.1",
+    "nsp": "~2.6.2",
+    "tap-spec": "~4.1.1",
+    "tape": "~4.6.2",
+    "standard-version": "^3.0.0"
   },
-  "preferGlobal": true,
-  "bin": {
-    "bgold": "./bin/bgold.js"
-  }
+  "dependencies": {}
 }
