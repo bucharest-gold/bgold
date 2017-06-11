@@ -1,7 +1,6 @@
 # bgold
 
 [![Build Status](https://travis-ci.org/bucharest-gold/bgold.svg?branch=master)](https://travis-ci.org/bucharest-gold/bgold)
-[![Known Vulnerabilities](https://snyk.io/test/npm/bgold/badge.svg)](https://snyk.io/test/npm/bgold)
 [![dependencies Status](https://david-dm.org/bucharest-gold/roi/status.svg)](https://david-dm.org/bucharest-gold/bgold)
 
 [![NPM](https://nodei.co/npm/bgold.png)](https://npmjs.org/package/bgold)
@@ -13,15 +12,21 @@ A CLI tool to setup a new Node.js project based on bucharest-gold guidelines.
 | License:        | Apache-2.0 |
 | Build:          | npm |
 | Issue tracker:  | https://github.com/bucharest-gold/bgold/issues |
-| Engines:        | Node.js 4.x, 6.x, 7.x |
+| Engines:        | Node.js 4.x, 6.x, 8.x |
 
 ## Installation
 
-    npm install bgold -g
+```
+npm install bgold -g
+```
 
 ## Usage
 
-TBD
+```
+bgold (creates the blank project without dependencies)
+bgold -i (creates the blank project adds the dependencies and install)
+bgold --install (same as -i)
+```
 
 ## Contributing
 
